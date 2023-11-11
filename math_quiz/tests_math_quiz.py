@@ -21,20 +21,19 @@ class TestMathGame(unittest.TestCase):
             self.assertIn(operator, operators)
 
     def test_calculate_result(self):
-            test_cases = [
-                (5, 2, '+', '5 + 2', 7),
-                ''' TODO add more test cases here '''
-                (10, 3, '-', '10 - 3', 7),
-                (6, 4, '*', '6 * 4', 24),
-            ]
+        test_cases = [
+            (5, 2, '+', '5 + 2', 7),
+            (10, 3, '-', '10 - 3', 7),
+            (6, 4, '*', '6 * 4', 24),
+        ]
 
-            for num1, num2, operator, expected_problem, expected_answer in test_cases:
-                # TODO
-                problem, answer = calculate_result(num1, num2, operator)
-                self.assertEqual(problem, expected_problem)
-                self.assertEqual(answer, expected_answer)
+        for num1, num2, operator, expected_problem, expected_answer in test_cases:
+            problem, answer = calculate_result(num1, num2, operator)
+            self.assertEqual(problem, expected_problem)
+            self.assertEqual(answer, expected_answer)
 
 
 if __name__ == "__main__":
     unittest.main()
+
   
