@@ -9,6 +9,5 @@ setup(
     url="https://github.com/BanBanbake/dsss_homework_2.gitt",
     packages=find_packages(),
     install_requires=[
-        "unittest",
     ],
 )
